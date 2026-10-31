@@ -1,0 +1,322 @@
+
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#241713">
+
+  <!-- Google Search Console verification -->
+  <meta name="google-site-verification"
+    content="GMR2oJx-ddG57Jbxe8qnj4VwlVZR-BLt-kpObqv3hhY">
+
+  <!-- Primary SEO -->
+  <title>BachpanBeats | पुराने हिंदी और भोजपुरी गाने, 90s Classics</title>
+
+  <meta name="description"
+    content="BachpanBeats पर सुनें पुराने हिंदी गाने, भोजपुरी क्लासिक्स, 90s के सदाबहार गीत, रोमांटिक और दर्द भरे नगमे। बचपन की धुनें, यादों के संग।">
+
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="BachpanBeats">
+
+  <link rel="canonical"
+    href="https://courageous-blancmange-bdfaae.netlify.app/">
+
+  <!-- Open Graph: Social media sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="BachpanBeats">
+  <meta property="og:title"
+    content="BachpanBeats | बचपन की धुनें, यादों के संग">
+  <meta property="og:description"
+    content="पुराने हिंदी गाने, भोजपुरी क्लासिक्स, 90s के सदाबहार गीत और दिल को छू लेने वाली धुनें।">
+  <meta property="og:url"
+    content="https://courageous-blancmange-bdfaae.netlify.app/">
+  <meta property="og:image"
+    content="https://courageous-blancmange-bdfaae.netlify.app/assets/childhood-memories.png">
+  <meta property="og:locale" content="hi_IN">
+
+  <!-- Twitter / X sharing -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title"
+    content="BachpanBeats | बचपन की धुनें, यादों के संग">
+  <meta name="twitter:description"
+    content="Old Hindi songs, Bhojpuri classics, 90s nostalgic music and evergreen melodies.">
+  <meta name="twitter:image"
+    content="https://courageous-blancmange-bdfaae.netlify.app/assets/childhood-memories.png">
+
+  <!-- Website structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "BachpanBeats",
+    "alternateName": "बचपन की धुनें, यादों के संग",
+    "url": "https://courageous-blancmange-bdfaae.netlify.app/",
+    "description": "BachpanBeats is a nostalgic music website featuring old Hindi songs, Bhojpuri classics, 90s music, romantic songs and sad melodies.",
+    "inLanguage": ["hi", "en"]
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Noto+Serif+Devanagari:wght@400;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google AdSense -->
+  <script async
+    src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8519169455427771"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <!-- Main website content -->
+  <main id="main-content">
+
+    <!-- HERO / HOMEPAGE -->
+    <section class="hero" id="hero">
+      <div class="shade" aria-hidden="true"></div>
+      <div class="rain-layer" id="rainLayer" aria-hidden="true"></div>
+
+      <nav class="nav" aria-label="Main navigation">
+        <div class="nav-left">
+          <button class="pill" id="aboutBtn" type="button">
+            हमारे बारे में · About
+          </button>
+
+          <button class="pill" id="faqBtn" type="button">
+            सवाल · FAQ
+          </button>
+        </div>
+
+        <div class="mini-brand">♫ BACHPANBEATS</div>
+      </nav>
+
+      <div class="center">
+        <p class="explore">
+          A LITTLE TRIP BACK IN TIME <span>✦</span>
+        </p>
+
+        <p class="hero-eyebrow">
+          वो गलियाँ · वो दोस्त · वो सुनहरे दिन
+        </p>
+
+        <h1 id="heroTitle" class="hero-title">
+          <span class="hindi-title">वो बचपन</span>
+          <span class="english-title">BachpanBeats</span>
+        </h1>
+
+        <p class="hero-tagline">
+          काश! वो दिन फिर लौट आएँ… ❤️
+        </p>
+
+        <p class="hero-subtitle">
+          Purani yaadein. Evergreen gaane.
+          <em>Some memories never fade.</em>
+        </p>
+
+        <button class="rain-toggle" id="rainToggle" type="button"
+          aria-pressed="false">
+          <span aria-hidden="true">🌧️</span>
+          Rain + Music
+          <b id="rainState">OFF</b>
+        </button>
+      </div>
+
+      <!-- MUSIC PLAYER -->
+      <section class="music-player" aria-label="Music player">
+        <div class="album" id="album" aria-hidden="true">♫</div>
+
+        <div class="track-block">
+          <strong id="trackTitle">
+            BachpanBeats — Your Retro Mix
+          </strong>
+
+          <small id="trackArtist">
+            पुरानी यादें • Evergreen melodies
+          </small>
+
+          <div class="progress-row">
+            <span id="currentTime">0:00</span>
+
+            <input type="range" id="seekBar"
+              min="0" max="100" value="0"
+              aria-label="Song progress">
+
+            <span id="duration">0:00</span>
+          </div>
+        </div>
+
+        <div class="player-buttons">
+          <button id="prevBtn" type="button"
+            aria-label="Previous track">‹</button>
+
+          <button class="play" id="playBtn" type="button"
+            aria-label="Play">▶</button>
+
+          <button id="nextBtn" type="button"
+            aria-label="Next track">›</button>
+        </div>
+
+        <audio id="audio" preload="metadata"></audio>
+      </section>
+
+      <p class="bottom-note">
+        WOH DIN · WOH DOST · WOH GAANE · SOME MEMORIES NEVER FADE
+      </p>
+    </section>
+
+    <!-- CHILDHOOD MEMORIES AND MUSIC CATEGORIES -->
+    <section class="memory-section" id="childhood">
+
+      <p class="section-kicker">
+        A TRIP DOWN MEMORY LANE
+      </p>
+
+      <h2>
+        वो बचपन के दिन…
+        <span>Childhood Memories</span>
+      </h2>
+
+      <p class="memory-intro">
+        काश! वो दिन फिर लौट आएँ…
+        <em>Some memories never fade.</em>
+      </p>
+
+      <article class="memory-feature">
+        <img
+          src="assets/childhood-memories.png"
+          alt="गाँव की सुनहरी गलियों में खेलते बच्चे और बचपन की यादें"
+          loading="lazy">
+
+        <div class="memory-caption">
+          <span>🌅 पुरानी गलियाँ · Golden memories</span>
+
+          <h3>चलो फिर से बचपन में लौट चलें</h3>
+
+          <p>
+            जहाँ शामें खेल में ढलती थीं, दोस्त अपने होते थे,
+            और खुशियाँ छोटी-छोटी बातों में मिलती थीं।
+          </p>
+        </div>
+      </article>
+
+      <!-- MUSIC AND SEO CONTENT -->
+      <section class="music-intro" aria-labelledby="music-heading">
+
+        <h2 id="music-heading">
+          पुराने हिंदी और भोजपुरी गाने
+        </h2>
+
+        <p>
+          BachpanBeats पर पुरानी यादों और सदाबहार संगीत का आनंद लें।
+          यहाँ आपको 90s Classics, पुराने हिंदी गीत, भोजपुरी क्लासिक्स,
+          रोमांटिक धुनों और दिल को छू लेने वाले Sad Songs का अनुभव मिलेगा।
+          हर गीत के साथ जुड़ी है एक याद, हर धुन में छिपी है एक कहानी।
+        </p>
+
+      </section>
+
+      <!-- MUSIC CATEGORIES -->
+      <p class="section-kicker category-kicker">
+        YOUR MOOD, YOUR MUSIC
+      </p>
+
+      <h2>अपनी पसंद, अपना Music</h2>
+
+      <p class="memory-intro">
+        हर गीत में एक कहानी, हर धुन में एक याद।
+      </p>
+
+      <div class="category-grid">
+
+        <button class="category-card" type="button"
+          data-category="90s Classics">
+
+          <span class="category-emoji" aria-hidden="true">📼</span>
+
+          <strong>90s Classics</strong>
+
+          <small>
+            वो पुराने दिन, वो पुरानी धुनें
+          </small>
+        </button>
+
+        <button class="category-card" type="button"
+          data-category="Bhojpuri Classics">
+
+          <span class="category-emoji" aria-hidden="true">🥁</span>
+
+          <strong>पुराने Bhojpuri गीत</strong>
+
+          <small>
+            माटी की खुशबू, दिल का सुकून
+          </small>
+        </button>
+
+        <!-- Romantic category can be enabled later
+        <button class="category-card" type="button"
+          data-category="Romantic">
+
+          <span class="category-emoji" aria-hidden="true">❤️</span>
+
+          <strong>Romantic धुनें</strong>
+
+          <small>इश्क़ वाली पुरानी यादें</small>
+        </button>
+        -->
+
+        <button class="category-card" type="button"
+          data-category="Sad Songs">
+
+          <span class="category-emoji" aria-hidden="true">🌧️</span>
+
+          <strong>Sad & Heart Touching</strong>
+
+          <small>
+            कुछ दर्द, कुछ अधूरी कहानियाँ
+          </small>
+        </button>
+
+      </div>
+
+      <p class="category-status" id="categoryStatus"
+        aria-live="polite">
+        अपनी पसंद की category चुनें।
+      </p>
+
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <strong>BachpanBeats</strong>
+
+    <span>बचपन की धुनें, यादों के संग ❤️</span>
+
+    <small>Some memories never fade.</small>
+  </footer>
+
+  <!-- ABOUT / FAQ DIALOG -->
+  <dialog id="infoDialog">
+
+    <button class="close" id="closeDialog" type="button"
+      aria-label="Close dialog">×</button>
+
+    <h2 id="dialogTitle">About BachpanBeats</h2>
+
+    <p id="dialogText"></p>
+
+  </dialog>
+
+  <!-- Main JavaScript -->
+  <script src="script.js"></script>
+
+</body>
+</html>
